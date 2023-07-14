@@ -32,6 +32,11 @@ export class FoodService {
     return tag === "All" ? this.getAll() : this.getAll().filter(food => food.tags?.includes(tag));
     // If the tag is "All", return all food items; otherwise, filter the food items based on the tag and return the filtered results
   }
+
+  getFoodById(foodId: string):Food{
+    return this.getAll().find(food => food.id==foodId) ?? new Food();
+  }
+
 }
 
 // The service is marked as @Injectable({ providedIn: 'root' }) to ensure that a single instance of the service is shared 
