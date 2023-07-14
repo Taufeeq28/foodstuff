@@ -1,66 +1,78 @@
-header{
-    position: relative;
-    background: white;
-    padding: 0;
-    border-bottom: 1px solid black;
+/* Set the styles for the header */
+header {
+    position: relative; /* Position the header relatively within its containing element */
+    background: white; /* Set the background color to white */
+    padding: 0; /* Remove padding */
+    border-bottom: 1px solid black; /* Add a black bottom border */
 }
 
-a{
-    color: black;
+/* Set the styles for anchor elements */
+a {
+    color: black; /* Set the text color to black */
 }
 
-a:hover{
-    background: #830202;
-    color: white;
-    cursor: pointer;
+/* Set the styles for anchor elements on hover */
+a:hover {
+    background: #830202; /* Change the background color to a dark red */
+    color: white; /* Set the text color to white */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
 }
 
-.container{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+/* Set the styles for the container */
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox to arrange its children */
+    justify-content: space-between; /* Space the children evenly */
 }
 
+/* Set the styles for the logo */
 .logo {
-    font-weight: bold;
-    padding: 1rem;
+    font-weight: bold; /* Set the font weight to bold */
+    padding: 1rem; /* Add padding */
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
+/* Set the styles for unordered lists */
+ul {
+    display: flex; /* Use flexbox to arrange list items horizontally */
+    list-style-type: none; /* Remove the default bullet points */
+    margin: 0; /* Remove margin */
 }
 
-ul a{
-    padding: 1rem;
-    display: inline-block;
+/* Set the styles for anchor elements within unordered lists */
+ul a {
+    padding: 1rem; /* Add padding to anchor elements */
+    display: inline-block; /* Make anchor elements behave as blocks */
 }
 
-a span{
-    background: #830202;
-    color: white;
-    padding: 0.1rem 0.45rem;
-    border-radius: 100rem;
-    font-size: 0.9rem;
+/* Set the styles for spans within anchor elements */
+a span {
+    background: #830202; /* Set the background color to a dark red */
+    color: white; /* Set the text color to white */
+    padding: 0.1rem 0.45rem; /* Add padding */
+    border-radius: 100rem; /* Make the span appear as a circle */
+    font-size: 0.9rem; /* Set the font size */
 }
 
-.menu-container{
-    position: relative;
+/* Set the styles for the menu container */
+.menu-container {
+    position: relative; /* Position the menu container relatively within its containing element */
 }
 
-.menu{
-    position: absolute;
-    z-index: 1;
-    background: whitesmoke;
-    display: none;
-
-}
-.menu-container:hover .menu{
-    display: block;
+/* Set the styles for the menu */
+.menu {
+    position: absolute; /* Position the menu absolutely within its containing element */
+    z-index: 1; /* Set the stacking order to appear above other elements */
+    background: whitesmoke; /* Set the background color to whitesmoke */
+    display: none; /* Hide the menu by default */
 }
 
-.menu a{
-    width: 100%;
-    min-width: 8rem;
+/* Show the menu on hover of the menu container */
+.menu-container:hover .menu {
+    display: block; /* Show the menu when hovering over the menu container */
+}
+
+/* Set the styles for anchor elements within the menu */
+.menu a {
+    width: 100%; /* Set the width to 100% to fill the menu container */
+    min-width: 8rem; /* Set a minimum width for the menu items */
 }
