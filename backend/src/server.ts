@@ -34,6 +34,11 @@ app.get('/api/foods/tag/:tagName', (req, res) => {
     const foods = sample_foods.filter(food => food.tags.includes(tagName));
     res.send(foods);
   });
+app.get('/api/foods/:foodId', (req, res) => {
+    const foodId = req.params.foodId;
+    const food = sample_foods.find(food => food.id == foodId);
+    res.send(food);
+})
 
 const port =  5000;
 app.listen(port, () => {
