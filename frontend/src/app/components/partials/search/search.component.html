@@ -4,3 +4,18 @@
      [value]="searchTerm" />
     <button (click)="search(s.value)">Search</button>
   </div>
+
+  <!-- <div>
+    <mat-form-field>
+      <input #s type="text" placeholder="Search Food Mine!"
+        (keyup.enter)="filterOptions(s.value)"
+        [matAutocomplete]="auto"
+        [value]="searchTerm" />
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <button (click)="search(s.value)">Search</button>
+  </div> -->
